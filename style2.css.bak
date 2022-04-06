@@ -1,0 +1,161 @@
+*{
+margin:0px;
+padding:0px;
+list-style: none;
+
+}
+body{
+background: #333;
+}
+.skills {
+width:500px;
+margin: 60px auto;
+color: white;
+margin-top: 15%;
+margin-left: 8%;
+
+
+}
+
+.skills li{
+
+margin:20px 0;
+
+}
+.bar{
+
+background:white;
+display: block;
+height:2px;
+border: 1px solid rgba(0,0,0,0.3);
+border-radius:3px;
+overflow:hidden;
+box-shadow:0 0 10px #2187e7b3;
+}
+
+.bar span{
+height: 2px;
+float: left;
+background: blue;
+
+}
+
+.html{
+width: 80%;
+animation: html 2s;
+}
+.css{
+width:45%;
+animation: css 2s;
+}
+.javascript
+{
+width: 0%;
+animation: javascript 2s;
+}
+.c {
+width:90%;
+animation: c++ 2s;
+}
+h3{
+	color:orange;
+	
+}
+
+@keyframes html{
+0%{
+width: 0%;
+
+}
+
+100%{
+width: 90%;
+}
+
+}
+
+.contact-parent{
+    background: #fff;
+    display:flex;
+    margin:80px 0;
+}
+.contact-child{
+    display:flex;
+    flex:1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+
+.child1{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+}
+.child1 p span{
+    font-size:16px;
+    color:#9df2fd;
+}
+
+
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+}
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+}
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#0085e2;
+}
+
+.inside-contact input, .inside-contact textarea{
+    width:100%;
+    background-color:#eee;
+    border:1px solid rgba(0,0,0,0.48);
+    padding:5px 10px;
+    margin-bottom:20px;
+}
+
+@media screen and (max-width:991px){
+    .contact-parent{
+        display:block;
+        width:100%;
+    }
+    .child1{
+        display:none;
+    }
+    .child2{
+        background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+        background-size:cover;
+    }
+    .inside-contact input, .inside-contact textarea{
+        background-color:#fff;
+    }
+}
+
+.inside-contact input[type=submit]:hover{
+    background-color:#fff;
+    color:#000;
+    transition:0.2s;
+}
+
